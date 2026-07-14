@@ -1,0 +1,12 @@
+ {{ define "main" }}
+ <div class="wrapper">
+   {{ .Content }}
+   {{ range site.RegularPages }}
+   <section class="post-item">
+     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+     <div class="post-meta">{{ .Date | time.Format "2006-01-02" }}</div>
+     <div class="post-summary">{{ .Summary | truncate 160 }}</div>
+   </section>
+   {{ end }}
+ </div>
+ {{ end }}

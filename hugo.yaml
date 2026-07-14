@@ -1,0 +1,20 @@
+ baseURL: https://violet060210.github.io/myblog/
+ languageCode: zh-cn
+ title: 我的博客
+ theme: minimal
+ 
+ params:
+   description: 记录思考与生活
+   author: Violet
+ 
+ menu:
+   main:
+     - name: 首页
+       pageRef: /
+       weight: 1
+     - name: 文章
+       pageRef: /posts
+       weight: 2
+     - name: 关于
+       pageRef: /about
+       weight: 3

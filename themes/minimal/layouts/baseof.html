@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+ <header class="site-header">
+   <div class="wrapper">
+     <div class="site-title"><a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></div>
+     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+   </div>
+ </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+   <footer class="site-footer">
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+</html>

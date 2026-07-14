@@ -1,0 +1,11 @@
+ {{- $page := .page }}
+ {{- $menuID := .menuID }}
+ {{- with index site.Menus $menuID }}
+   <nav class="site-nav">
+     <ul>
+       {{- range . }}
+         <li><a href="{{ .URL }}"{{ if $page.IsMenuCurrent .Menu . }} class="active"{{ end }}>{{ .Name }}</a></li>
+       {{- end }}
+     </ul>
+   </nav>
+ {{- end }}
