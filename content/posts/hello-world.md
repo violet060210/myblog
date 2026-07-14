@@ -16,11 +16,7 @@ author: "Violet"
 
 ## 技术选型
 
-这个博客使用 [Hugo](https://gohugo.io) 搭建，托管在 GitHub Pages 上。选择 Hugo 的原因很简单：
-
-- **快** -- 数百篇文章也能秒级构建
-- **简单** -- 一个二进制文件，无需运行时依赖
-- **免费** -- GitHub Pages 提供免费的静态网站托管
+这个博客使用 [Hugo](https://gohugo.io) 搭建，托管在 GitHub Pages 上。
 
 ## 接下来
 
